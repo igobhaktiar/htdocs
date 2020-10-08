@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Button disabled</h1>
+    <button type="button" disabled>Click</button>
+    <h2>fieldset</h2>
+    <form>
+        <fieldset id="fs">
+            nama  : <input type="text"><br>
+            email : <input type="text"><br>
+        </fieldset>
+    </form>
+    <p>Klik tombol untuk disable</p>
+    <button onclick="myFunction()">Klik</button>
+    <script>
+        function myFunction(){
+            document.getElementById("fs").disabled = true;
+        }
+    </script>
+    <h3>blockquote</h3>
+    <blockquote cite=" https://www.polije.ac.id/luncurkan-logo-komersial-jalur-pmdkpa-dan-snmpn-2020/">Peluncuran logo komersial tersebut disaksikan oleh semua pejakat struktural dan non struktural Polije serta pejabat perwakilan mitra seperti Bank BRI, beberapa PT di Jember serta undangan lainnya.</blockquote>
+    <h4>figure</h4>
+    <figure>
+        <img src="th.jpg">
+    </figure>
+    <h5>figcaption</h5>
+    <figure>
+        <img src="th.jpg">
+        <figcaption>gambar.1 - logo POLIJE.</figcaption>
+    </figure>
+</body>
+</html>
