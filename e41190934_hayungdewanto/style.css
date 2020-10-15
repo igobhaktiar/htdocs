@@ -1,0 +1,43 @@
+h1  {color: orange;
+	font-family: sans-serif;
+    text-align: center;
+    }
+body{
+    font-family: "Arial";
+    font-size: 12px;
+    }
+input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: #3CBC8D;
+        color: white;
+      }
+        input[type=submit] {
+        width: 15%;
+        background-color:rgb(7, 114, 201);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+        input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: #3CBC8D;
+        color: white;
+      }
+        body {
+        background-color: grey;
+        }
+        fieldset {
+  background-color: #eeeeee;
+}
+

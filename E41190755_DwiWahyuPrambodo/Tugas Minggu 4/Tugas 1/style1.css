@@ -1,0 +1,20 @@
+h3{
+    color: coral;
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+.persegi{
+    padding: 50px;
+	width: 100px;
+	color: #fff;
+	margin: 10px;
+	background: rgb(211, 164, 77);	
+}
+#persegi{
+    width: 400px;
+	color: #fff;
+	background: coral;
+	padding: 50px;
+}
