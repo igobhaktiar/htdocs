@@ -5,9 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasir</title>
 </head>
+<style>
+    body {
+      background-color: #3caea3;
+      width: 300px;
+      border: 10px solid #f6d55c;
+      padding: 100px;
+      margin: 10px;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type=text], tr {
+  width: 100%;
+  padding: 12px 25px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+input[type=password], tr {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=username], tr {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+    </style>
 <body>
-    <center>
-    <h3 align="center">FORM DATA KASIR</h3>
+        
+    <h3>FORM DATA KASIR</h3>
     <table>
         <tr>
             <td> ID Kasir :</td>
@@ -54,10 +99,13 @@
             <td></td>
             <td><input type="password" name="password" placeholder="**"/></td>
     </table>
-    <form action="target.html">
-        <input type="submit" value="Kirim">
-    </form>
-</center>
+
+        <form action="target.html">
+            <input type="submit" value="Kirim">
+        </form>
+
+    
 
 </body>
+
 </html>
