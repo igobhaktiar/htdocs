@@ -1,23 +1,111 @@
-<!-- 
-6.	marquee
-7.	menu:context, menu:c
-8.	menu:toolbar, menu:t
-9.	video
-10.	audio| -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Kasir</title>
 </head>
+<style>
+    body {
+      background-color: #3caea3;
+      width: 300px;
+      border: 10px solid #f6d55c;
+      padding: 100px;
+      margin: 10px;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type=text], tr {
+  width: 100%;
+  padding: 12px 25px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+input[type=password], tr {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=username], tr {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+    </style>
 <body>
-   <marquee behavior="scroll" direction="left">scroll ke kanan</marquee>
-   <menu type="context">menu context</menu>
-   <menu type="toolbar">menu toolbar</menu>    
-   <video src=""></video>
-   <audio src=""></audio>
+        
+    <h3>FORM DATA KASIR</h3>
+    <table>
+        <tr>
+            <td> ID Kasir :</td>
+            <td></td>
+            <td><input type="text" name="id kasir" placeholder="ID"/></td>   
+        </tr>
+
+        <tr>
+            <td>NAMA KASIR  :</td>
+            <td></td>
+            <td><input type="text" name="nama kasir" placeholder="NAMA"/></td>
+        </tr>
+
+        <tr>
+            <td>ALAMAT  :</td>
+            <td></td>
+            <td><select name="alamat">
+                <option value="jember">Jember</option>
+                <option value="lumajang">Lumajang</option>
+                <option value="bwi">Banyuwangi</option>
+            </select></td>
+        </tr>
+        
+        <tr>
+            <td>TELEPON KASIR   :</td>
+            <td></td>
+            <td><input type="text" name="telpkasir" placeholder="Telp"/></td>
+        </tr>
+        
+        <tr>
+            <td>STATUS  :</td>
+            <td></td>
+            <td><input type="radio" name="status" value="laki-laki"/>Laki-Laki</td>
+            <td><input type="radio" name="status" value="perempuan"/>Perempuan</td>
+            
+        <tr>
+            <td>USERNAME    :</td>
+            <td></td>
+            <td><input type="username" name="username" placeholder="Username"/></td>
+        </tr>
+        
+        <tr>
+            <td>PASSWORD    :</td>
+            <td></td>
+            <td><input type="password" name="password" placeholder="**"/></td>
+    </table>
+
+        <form action="target.html">
+            <input type="submit" value="Kirim">
+        </form>
+
+    
+
 </body>
+
 </html>

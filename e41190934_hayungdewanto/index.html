@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi Anggota Baru</title>
+</head>
+<body>
+    <form action="target.html"" method="POST">
+        <fieldset>
+        <legend>Form Data Kasir</legend>
+        <table>
+            <tr>
+            <td>ID</td>
+            <td>:</td>
+            <td></td>
+            <td><input type="text" name="ID" placeholder="ID..." required></td>
+            </tr>
+
+            <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td></td>
+            <td><input type="text" name="nama" placeholder="Nama.." required></td>
+            </tr>
+        
+            <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td></td>
+            <td><input type="text" name="Alamat" placeholder="Alamat.." required></td>
+            </tr>
+        
+            <tr>
+            <td>Tgl Lahir</td>
+            <td>:</td>
+            <td></td>
+            <td><input type="date" name="Tgl Lahir" required></td>
+            </tr>
+            
+            <tr>
+            <td>Jenis kelamin</td>
+            <td>:</td>
+            <td></td>
+            <td><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label></td>
+           </tr>
+        
+            <tr>
+            <td>Agama</td>
+            <td>:</td>
+            <td></td>
+            <td><select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select></td>
+            </tr>
+            <tr>
+            <td>Username</td>
+            <td>:</td>
+            <td></td>
+            <td><input type="text" name="username" placeholder="Username.." required></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td></td>
+                <td><input type="password" name="password" placeholder="**" required></td>
+                </tr>
+        </table>
+        <p>
+            <input type="submit" name="submit" value="Simpan" />
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
