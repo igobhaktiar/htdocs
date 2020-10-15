@@ -1,0 +1,41 @@
+body{
+    margin: 0%;
+}
+.header {
+    background-color: #26eeee;
+    padding: 20px;
+    text-align: center;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(22, 219, 219);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .column {
+    float: center;
+    width: 90%;
+    padding: 15px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  .footer {
+    background-color: #f1f1f1a1;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
