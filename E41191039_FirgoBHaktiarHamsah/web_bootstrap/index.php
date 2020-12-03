@@ -225,7 +225,18 @@
           <!-- Content Row -->
 
           <div class="row">
-
+          <?php
+          if (isset($_GET['pesan'])){
+            $pesan = $GET_['pesan'];
+            if ($pesan == "berhasil") {
+              ?>
+              <div class="alert alert-succes">
+              <strong>Succes!</strong> Anda berhasil login.
+              </div>
+              <?php
+            }
+          }
+          ?>
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-primary shadow h-100 py-2">
