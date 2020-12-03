@@ -48,14 +48,14 @@
                   ?>
                   
                   <div class="alert alert-danger">
-                      <strong>Danger !</strong> Anda gagal login, email tidak ditemukan.
+                      <strong>Peringatan !</strong> Login tidak berhasil, email tidak dapat ditemukan.
                   </div>
                   
                   <?php
                     } else if ($pesan=="passwordsalah") {
                   ?>
                   <div class="alert alert-danger">
-                      <strong>Danger !</strong> Anda gagal login, password salah.
+                      <strong>Peringatan !</strong> Login tidak berhasil, password anda salah periksa kembali password anda.
                   </div>
                   <?php
                     }
