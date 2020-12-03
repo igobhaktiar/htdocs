@@ -1,3 +1,12 @@
+<?php
+include "koneksi.php";
+session_start();
+
+if (empty($_SESSION['nama_user'])) {
+  echo "<script>alert('Silahkan Login!');location='login.php' </script>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -225,6 +234,30 @@
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
+          <!-- <a href="logout.php">
+            <button class="btn btn-info">LogOut</button>
+          </a> -->
+
+          <?php
+          if (isset($_GET['pesan'])){
+            $pesan = $_GET['pesan'];
+            if ($pesan == "berhasil"){
+              ?>
+              <div class="alert alert-success">
+                <strong>Success!</strong> Anda berhasil login.
+              </div>
+              <?php
+            }
+
+          }
+          ?>
+          
+          <!-- <pre>
+            Cek yang login <br>
+            Nama : <?php print_r($_SESSION['nama_user']); ?> <br>
+            Email : <?php print_r($_SESSION['email']); ?> <br>
+            Password : <?php print_r($_SESSION['password']); ?> <br>
+          </pre>  -->
           <!-- Content Row -->
           <div class="row">
 
