@@ -228,6 +228,28 @@
           </div>
 
           <!-- Content Row -->
+          <?php
+          if (isset($_GET['pesan'])){
+            $pesan = $_GET['pesan'];
+            if ($pesan == "berhasil"){
+              ?>
+              <div class="alert alert-success">
+                <strong>Success!</strong> Anda berhasil login.
+              </div>
+              <?php
+            }
+
+          }
+          ?>
+          
+          <!-- <pre>
+            Cek yang login <br>
+            Nama : <?php print_r($_SESSION['nama_user']); ?> <br>
+            Email : <?php print_r($_SESSION['email']); ?> <br>
+            Password : <?php print_r($_SESSION['password']); ?> <br>
+          </pre>  -->
+          <!-- Content Row -->
+          
           <div class="row">
 
             <!-- Earnings (Monthly) Card Example -->
