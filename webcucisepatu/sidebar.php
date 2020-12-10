@@ -10,7 +10,7 @@
     <li class="active"> <a href="index.php">Home</a></li>
      <li> <a href="about.php">About</a></li>
                             <li> <a href="product.php">Treatment</a></li>
-                            <li> <a href="blog.html">Cek Status</a></li>
+                            <li> <a href="cekstatus/cekstatus.html">Cek Status</a></li>
                             <li> <a href="contact.html">Contact us</a></li>
 
 </ul>
@@ -43,13 +43,13 @@
                     <div class="right_header_info">
                         <ul>
                             <li>
-                                <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#" /></a>
+                                <a href="login/login.php"><img style="margin-right: 15px;" src="icon/1.png" alt="#" /></a>
                             </li>
                             <li class="tytyu">
                                 <a href="#"><img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
                             </li>
                             <li>
-                                <a href="#"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
+                                <a href="transaksi/transaksi.php"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
                             </li>
 
                             <li>
