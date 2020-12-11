@@ -11,7 +11,7 @@
      <li> <a href="about.php">About</a></li>
                             <li> <a href="product.php">Treatment</a></li>
                             <li> <a href="cekstatus/cekstatus.html">Cek Status</a></li>
-                            <li> <a href="contact.html">Contact us</a></li>
+                            <li> <a href="contact.php">Contact us</a></li>
 
 </ul>
 
@@ -31,7 +31,7 @@
                     <div class="full">
                         <div class="center-desk">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                    <font color="black">Feaf.id</font>
                                     <!-- <img src="images/logo.jpg" alt="#"> -->
                                 </a>
