@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transaksi</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="sidebar/css/bootstrap.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="sidebar/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="sidebar/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="sidebar/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="sidebar/images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="sidebar/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
     <style>
         .biru{
-            background-color: lightblue;
+            background-color: white;
             padding-top: 15px;
             padding-bottom: 15px;
         }
@@ -25,23 +39,28 @@
             width: 500px;
             height: 400px;
         }
-        .futer{
-            background-color: lightskyblue;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .futer h4{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: 600;
-        }
+
+
         
     </style>
 </head>
 <body>
+
+<?php include "./sidebar.php" ?>
+
+<div class="contactus">
+        <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-8 offset-md-2">
+                  <div class="title">
+                     <h2>Transaksi</h2>
+                    
+                  </div>
+               </div>
+            </div>
+          </div>
+      </div>
     <div class="container-fluid biru">
-        <h1 align="center">SHOES CARE</h1>
         <div class="row">
             <div class="col kotak">
                 <img src="images/logo.png" alt="">
@@ -119,11 +138,6 @@
         </div>
     </div>
 
-    <div class="container-fluid futer">
-        <h4>Happy Washing xixi:)</h4>
-    </div>
-   
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -174,6 +188,41 @@
           });
         });
       </script>
+
+    <!-- Javascript files-->
+    <script src="sidebar/js/jquery.min.js"></script>
+    <script src="sidebar/js/popper.min.js"></script>
+    <script src="sidebar/js/bootstrap.bundle.min.js"></script>
+    <script src="jsidebar/s/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="sidebar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="sidebar/js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+        });
+    </script>
+            <!--  footer -->
+            <?php include "./footer.php" ?>
+            <!-- end footer -->
+
   
 </body>
 </html>

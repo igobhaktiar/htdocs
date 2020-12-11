@@ -180,6 +180,14 @@ header.top .search-bar form button {
 	align-items: center;
 	min-height: 72px;
 }
+.form-control {
+    border: #fff solid 2px;
+    border-radius: inherit;
+    margin-bottom: 20px;
+    padding: 2px 20px;
+    box-shadow: #ddd 0px 0px 11px 4px;
+    font-family: poppins;
+}
 header.top .topmenu li a:hover {
 	border-bottom: 2px solid #cf0000;
 }
