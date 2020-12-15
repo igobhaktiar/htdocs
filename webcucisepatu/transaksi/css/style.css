@@ -180,6 +180,14 @@ header.top .search-bar form button {
 	align-items: center;
 	min-height: 72px;
 }
+
+.table {
+    width: 50%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
 .form-control {
     border: #fff solid 2px;
     border-radius: inherit;
