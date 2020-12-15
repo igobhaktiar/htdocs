@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/aa.css">
     <!-- fevicon -->
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
@@ -33,7 +34,15 @@
 <!-- body -->
 
 <body class="main-layout">
-
+<body onload="togglePopup()">
+    <script src="js/JS.js"></script>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+         <img src="images/promo.jpg" alt="">
+        </div>
+      </div>
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
