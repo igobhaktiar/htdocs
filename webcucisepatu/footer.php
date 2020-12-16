@@ -33,15 +33,6 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="new">
-                                    <h3>Newsletter</h3>
-                                    <form class="newtetter">
-                                        <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                        <button class="submit">Subscribe</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
                                 <div class="newtt">
                                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point
                                         <br> of using Lorem I</p>
