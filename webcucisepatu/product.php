@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>niture</title>
+      <title>Feaf Shoes Care</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -38,17 +38,18 @@
 
      <div class="wrapper">
 
-      <!-- end loader --> 
-      <div class="sidebar">
-         
+      <!-- end loader -->
 
-         <!-- end header -->
+      <div class="sidebar">
+      <?php include "./sidebar.php" ?>
+      <!-- end header -->
+
       <div class="contactus">
    <div class="container-fluid">
             <div class="row">
                <div class="col-md-8 offset-md-2">
                   <div class="title">
-                     <h2>Our Product</h2>
+                     <h2>Treatment</h2>
                     
                   </div>
                </div>
@@ -62,13 +63,16 @@
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="full product">
           <div class="product_img">
-            <div class="center"> <img src="icon/p1.png" alt="#"/>
+            <div class="center"> <img src="icon/1day.png" alt="#"/>
               <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
-            <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_price">30K
+                <!-- <span class="old_price">$679.89</span> -->
+            </p>
+            <p class="product_descr"><h3>One Day Service</h3></p>
+            <p class="product_descr">Membersihkan sepatu bagian upper, laces, midsole, outsole dan insole</p>
           </div>
         </div>
       </div>
@@ -77,13 +81,16 @@
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="full product">
           <div class="product_img">
-            <div class="center"> <img src="icon/p2.png" alt="#"/>
+            <div class="center"> <img src="icon/speedometer.png" alt="#"/>
               <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
-            <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_price">15K
+                <!-- <span class="old_price">$679.89</span> -->
+            </p>
+            <p class="product_descr"><h3>Fast Cleaning</h3></p>
+            <p class="product_descr">Membersihkan sepatu bagian upper, laces, midsole</p>
           </div>
         </div>
       </div>
@@ -92,13 +99,16 @@
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="full product">
           <div class="product_img">
-            <div class="center"> <img src="icon/p3.png" alt="#"/>
+            <div class="center"> <img src="icon/running.png" alt="#"/>
               <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
-            <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_price">25k 
+                <!-- <span class="old_price">$679.89</span> -->
+            </p>
+            <p class="product_descr"><h3>Deep Cleaning</h3></p>
+            <p class="product_descr">Membersihkan sepatu bagian upper, laces, midsole, outsole dan insole</p>
           </div>
         </div>
       </div>
@@ -107,13 +117,16 @@
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="full product">
           <div class="product_img">
-            <div class="center"> <img src="icon/p4.png" alt="#"/>
+            <div class="center"> <img src="icon/shoe.png" alt="#"/>
               <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
-            <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_price">40K 
+                <!-- <span class="old_price">$679.89</span> -->
+            </p>
+            <p class="product_descr"><h3>Unyellowing</h3></p>
+            <p class="product_descr">Menghilangkan noda kuning</p>
           </div>
         </div>
       </div>
@@ -122,13 +135,16 @@
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="full product">
           <div class="product_img">
-            <div class="center"> <img src="icon/p1.png" alt="#"/>
+            <div class="center"> <img src="icon/cap.png" alt="#"/>
               <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
-            <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_price">15K
+                <!-- <span class="old_price">$679.89</span> -->
+            </p>
+            <p class="product_descr"><h3>Cap</h3></p>
+            <p class="product_descr">Membersihkan seluruh bagian topi</p>
           </div>
         </div>
       </div>
@@ -137,13 +153,16 @@
       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="full product">
           <div class="product_img">
-            <div class="center"> <img src="icon/p2.png" alt="#"/>
+            <div class="center"> <img src="icon/bag.png" alt="#"/>
               <div class="overlay_hover"> <a class="add-bt" href="product_detail3.html">+ Add to cart</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
-            <p class="product_price">$679.89 <span class="old_price">$679.89</span></p>
-            <p class="product_descr">Lightweight Down Puffer Coat</p>
+            <p class="product_price">
+                <!-- <span class="old_price">$679.89</span> -->
+            </p>
+            <p class="product_descr"><h3>Bag</h3></p>
+            <p class="product_descr">Membersihkan seluruh bagian tas</p>
           </div>
         </div>
       </div>
@@ -152,69 +171,9 @@
   </div>
 </div>
 
-      <!--  footer --> 
-      <footer>
-         <div class="footer">
-            <div class="container-fluid">
-               <div class="border1">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  
-                    <img class="logo1" src="images/logo1.jpg"/>
-                  </div>
-            
-                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  
-                    
-                     <ul class="lik">
-                        <li> <a href="index.html">Home</a></li>
-                         <li> <a href="about.html">About</a></li>
-                         <li> <a href="product.html">Product</a></li>
-                         <li> <a href="blog.html">Blog</a></li>
-                        <li> <a href="contact.html">Contact us</a></li>
-                     </ul>
-                  </div>
-            
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                     <ul class="sociel">
-                         <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                         <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                         <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-                         <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-                     </ul>
-                  </div>
-            </div>
-            
-                
-                
-          </div>
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="new">
-                     <h3>Newsletter</h3>
-                     <form class="newtetter">
-                        <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                        <button class="submit">Subscribe</button>
-                     </form>
-                  </div>
-               </div>
-                <div class="col-md-12">
-                  <div class="newtt">
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point<br> of using Lorem I</p>
-                  </div>
-               </div>
-            </div>
-
-         </div>
-            <div class="copyright">
-               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
-            </div>
-         </div>
-    
-      </footer>
-      <!-- end footer -->
+      <!--  footer -->
+      <?php include "./footer.php" ?>
+            <!-- end footer -->
    </div>
 
 </div>
