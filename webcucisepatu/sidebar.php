@@ -49,7 +49,7 @@
                                 <a href="#"><img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
                             </li>
                             <li>
-                                <a href="transaksi/transaksi.php"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
+                                <a href="transaksi.php"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
                             </li>
 
                             <li>
