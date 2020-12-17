@@ -43,7 +43,7 @@
                     <div class="right_header_info">
                         <ul>
                             <li>
-                                <a href="login/login.php"><img style="margin-right: 15px;" src="icon/1.png" alt="#" /></a>
+                                <a href="logreg/Login/index.php"><img style="margin-right: 15px;" src="icon/1.png" alt="#" /></a>
                             </li>
                             <li class="tytyu">
                                 <a href="#"><img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
