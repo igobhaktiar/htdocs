@@ -10,7 +10,7 @@
     <li class="active"> <a href="index.php">Home</a></li>
      <li> <a href="about.php">About</a></li>
                             <li> <a href="product.php">Treatment</a></li>
-                            <li> <a href="cekstatus/cekstatus.php">Cek Status</a></li>
+                            <li> <a href="cekstatus.php">Cek Status</a></li>
                             <li> <a href="contact.php">Contact us</a></li>
 
 </ul>
