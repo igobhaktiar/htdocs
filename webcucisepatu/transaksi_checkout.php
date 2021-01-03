@@ -1,6 +1,10 @@
 <?php
 include "koneksi/koneksi.php";
 session_start();
+
+if (empty($_SESSION['nama'])) {
+    echo "<script>alert('Silahkan Login!');location='login.php'</script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +12,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CheckOut</title>
 
     <link rel="stylesheet" href="css/css/bootstrap.min.css">
     <!-- style css -->
@@ -22,12 +26,39 @@ session_start();
 
 <body>
 <?php include "./sidebar.php" ?>
-    <a href="coba_hapus.php">
-        <!-- <button type="button">Logout</button> -->
-    </a><br> <br>
+
+<div class="contactus">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="title">
+                        <h2>CheckOut</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <a href="transaksi_aksi.php?xaksi=sesi">
+            <!-- <button type="button" class="btn btn-danger btn-sm">Hapus Session POS</button> -->
+        </a>
+    </div><br> <br>
     <div class="container">
         <div class="row">
             <div class="col">
+            <table border="1" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Treatment</th>
+                    <th>Biaya</th>
+                    <th>Jumlah</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+
                 <?php
 
                 $trea = $_SESSION['pos']['xid_barang'];
@@ -57,28 +88,36 @@ session_start();
                         $subtotal = $subtotal + $harga;
                     }
 
-                    echo "Untuk barang <b>" . $b['nama_barang'] . "</b> <br>";
-                    echo "Nama treatment = " . $h['nama_treatment'] . "<br>";
-                    echo "Biaya  = Rp " . number_format($h['harga_treatment']) . "<br>";
-                    echo "jumlahnya= " . $jml[$i] . "<br>";
-                    echo "Ongkosnya : Rp $harga <br><br>";
-                    $i++;
-                }
-
+                    ?>
+                        <tr>
+                            <td><?php echo $b['nama_barang']; ?></td>
+                            <td><?php echo $h['nama_treatment']; ?></td>
+                            <td>Rp <?php echo number_format($h['harga_treatment']); ?></td>
+                            <td><?php echo $jml[$i]; ?></td>
+                            <td>RP <?php echo number_format($harga); ?></td>
+                            
+                        </tr>
+                    
+                    <?php  $i++;} ?>
+                <!-- untuk mengulang tr td -->
+                    </tbody>
+                </table>
+                <?php
                 $ido = $_SESSION['pos']['xid_ongkir'];
                 $sqlo = mysqli_query($konek, "select * from tb_ongkir where id_ongkir='$ido'");
                 $do = mysqli_fetch_assoc($sqlo);
                 $total = $subtotal + $do['harga_ongkir'];
 
-                echo "Diskon  = " . $d['nama_promo'] . " " . $d['diskon'] . "%<br>";
-                echo "Ongkirnya : " . $do['harga_ongkir'];
+                echo "Diskon  : " . $d['nama_promo'] . " " . $d['diskon'] . "%<br>";
+                echo "Ongkos Kirim : " . $do['harga_ongkir'];
                 echo "<br>Total Pesanan : Rp $total";
                 echo "<br>Pesan : $psn";
 
                 ?>
+
             </div>
         </div>
-        <a href="coba_aksi.php?total=<?php echo $total ?>"><button class="btn btn-outline-success btn-sm">Simpan</button></a>
+        <a href="transaksi_aksi.php?xaksi=simpan&total=<?php echo $total ?>"><button class="btn btn-outline-success btn-sm">Simpan</button></a>
     </div>
     <br>
     <script src="js/bootstrap.min.js"></script>

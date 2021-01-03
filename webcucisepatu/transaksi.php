@@ -1,5 +1,10 @@
 <?php
 include "koneksi/koneksi.php";
+session_start();
+
+if (empty($_SESSION['nama'])) {
+    echo "<script>alert('Silahkan Login!');location='login.php'</script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,20 +18,14 @@ include "koneksi/koneksi.php";
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
-<style>
-        .kotak{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .biru img{
-        width: 500px;
-        height: 400px;
-        }
-</style>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
 </head>
 
 <body>
@@ -45,14 +44,14 @@ include "koneksi/koneksi.php";
             </div>
         </div>
     </div>
-    <div class="container-fluid biru">
+    <div class="container-fluid biru mt-5 mb-5">
         <div class="row">
             <div class="col kotak">
                 <img src="images/logo.png" alt="">
             </div>
             <div class="col">
-                <form action="transaksi_aksi.php" method="post">
-                <br>
+                <form action="transaksi_aksi.php?xaksi=tambah" method="post">
+
                     <button type="button" id="btn-tambah-form" class="btn btn-danger btn-sm">Tambah Form</button>
                     <button type="button" id="btn-reset-form" class="btn btn-outline-secondary btn-sm">Reset Form</button><br><br>
 
@@ -61,7 +60,7 @@ include "koneksi/koneksi.php";
                         <tbody>
                             <tr>
                                 <td>Jenis Barang</td>
-                                <td><select class="form-control" name="xid_barang[]" id="id_barang">
+                                <td><select class="form-control" name="xid_barang[]" id="id_barang" required>
                                         <option value="">-----Pilih Barang-----</option>
                                         <?php
                                         $sql = mysqli_query($konek, "select * from tb_barang");
@@ -73,7 +72,7 @@ include "koneksi/koneksi.php";
                             </tr>
                             <tr>
                                 <td>Threatment</td>
-                                <td><select class="form-control" name="xid_treatment[]" id="id_treatment">
+                                <td><select class="form-control" name="xid_treatment[]" id="id_treatment" required>
                                         <option value="">-----Pilih Treatment-----</option>
                                         <?php
                                         $sqla = mysqli_query($konek, "select * from tb_treatment");
@@ -86,7 +85,7 @@ include "koneksi/koneksi.php";
                             </tr>
                             <tr>
                                 <td>Jumlah</td>
-                                <td><input class="form-control" type="text" name="xjumlah[]" id=""></td>
+                                <td><input class="form-control" type="text" name="xjumlah[]" id="" required></td>
                             </tr>
                         </tbody>
                     </table>
@@ -98,7 +97,7 @@ include "koneksi/koneksi.php";
                             <tr>
                                 <td>Pilih Lokasi</td>
                                 <td>
-                                    <select class="form-control" name="xid_ongkir" id="xid_ongkir">
+                                    <select class="form-control" name="xid_ongkir" id="xid_ongkir" required>
                                         <option value="">-----Pilih Lokasi-----</option>
                                         <?php
                                         $sql = mysqli_query($konek, "select * from tb_ongkir");
@@ -112,7 +111,7 @@ include "koneksi/koneksi.php";
                             <tr>
                                 <td>Pilih Promo</td>
                                 <td>
-                                    <select class="form-control" name="xid_promo" id="xid_promo">
+                                    <select class="form-control" name="xid_promo" id="xid_promo" required>
                                         <option value="">-----Pilih Promo-----</option>
                                         <?php
                                         $sql = mysqli_query($konek, "select * from tb_promo");
@@ -125,11 +124,11 @@ include "koneksi/koneksi.php";
                             </tr>
                             <tr>
                                 <td>Alamat Jemput</td>
-                                <td><textarea class="form-control" name="xjemput" id="xjemput" cols="10" rows="3"></textarea></td>
+                                <td><textarea class="form-control" name="xjemput" id="xjemput" cols="10" rows="3" required></textarea></td>
                             </tr>
                             <tr>
                                 <td>Alamat Diantar</td>
-                                <td><textarea class="form-control" name="xantar" id="xantar" cols="10" rows="3"></textarea></td>
+                                <td><textarea class="form-control" name="xantar" id="xantar" cols="10" rows="3" required></textarea></td>
                             </tr>
                             <tr>
                                 <td>Pesan (Opsional)</td>
@@ -140,11 +139,9 @@ include "koneksi/koneksi.php";
                     <hr>
                     <button type="submit" name="btn" class="btn btn-outline-success btn-sm">Cuci Sekarang</button>
                 </form>
-                <br>
 
                 <input type="hidden" id="jumlah-form" value="1">
-                
-                                        
+
             </div>
         </div>
     </div>
@@ -165,7 +162,7 @@ include "koneksi/koneksi.php";
                         <tbody>
                             <tr>
                                 <td>Jenis Barang</td>
-                                <td><select class="form-control" name="xid_barang[]" id="id_barang">
+                                <td><select class="form-control" name="xid_barang[]" id="id_barang" required>
                                         <option value="">-----Pilih Barang-----</option>
                                         <?php
                                         $sql = mysqli_query($konek, "select * from tb_barang");
@@ -177,7 +174,7 @@ include "koneksi/koneksi.php";
                             </tr>
                             <tr>
                                 <td>Threatment</td>
-                                <td><select class="form-control" name="xid_treatment[]" id="id_treatment">
+                                <td><select class="form-control" name="xid_treatment[]" id="id_treatment" required>
                                         <option value="">-----Pilih Treatment-----</option>
                                         <?php
                                         $sqla = mysqli_query($konek, "select * from tb_treatment");
@@ -190,7 +187,7 @@ include "koneksi/koneksi.php";
                             </tr>
                             <tr>
                                 <td>Jumlah</td>
-                                <td><input class="form-control" type="text" name="xjumlah[]" id=""></td>
+                                <td><input class="form-control" type="text" name="xjumlah[]" id="" required></td>
                             </tr>
                         </tbody>
                     </table>` +
