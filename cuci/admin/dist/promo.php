@@ -54,6 +54,7 @@ if ($_SESSION['status'] != "Login") {
                                                 <th hidden>ID Promo</th>
                                                 <th>Nama Promo</th>
                                                 <th>Diskon</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tfoot>

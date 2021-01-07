@@ -25,6 +25,17 @@ if (empty($_SESSION['nama'])) {
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <style>
+        .kotak{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .biru img{
+        width: 500px;
+        height: 400px;
+        }
+</style>
 
 </head>
 
@@ -47,7 +58,7 @@ if (empty($_SESSION['nama'])) {
     <div class="container-fluid biru mt-5 mb-5">
         <div class="row">
             <div class="col kotak">
-                <img src="images/logo.png" alt="">
+                <img src="images/logofeaf.jpeg" alt="">
             </div>
             <div class="col">
                 <form action="transaksi_aksi.php?xaksi=tambah" method="post">

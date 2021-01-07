@@ -21,6 +21,7 @@ if ($cek > 0) {
 	$_SESSION['status'] = "Login";
 	$_SESSION['username'] = $data['username'];
 	$_SESSION['password'] = $data['password'];
+	$_SESSION['id_petugas'] = $data['id_petugas'];
 	header("location:index.php");
 } else {
   header("location:login.php?pesan=gagal");

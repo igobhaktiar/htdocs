@@ -26,9 +26,9 @@ if ($aksi == 'tambah') {
 
 if ($aksi == 'simpan') {
     $id_pelanggan = $_SESSION['idpelanggan'];
-    $id_petugas = 1;
     $id_ongkir = $_SESSION['pos']['xid_ongkir'];
     $id_promo = 1;
+    date_default_timezone_set("Asia/Jakarta");
     $tgl_transaksi = date("Y-m-d H:i:s");
     $antar = $_SESSION['pos']['xantar'];
     $jemput = $_SESSION['pos']['xjemput'];
@@ -39,8 +39,8 @@ if ($aksi == 'simpan') {
     $sqld = mysqli_query($konek, "select * from tb_promo where id_promo='$idprm'");
     $d = mysqli_fetch_assoc($sqld);
 
-    $sql = mysqli_query($konek, "insert into tb_transaksi(id_pelanggan,id_petugas,id_ongkir,id_promo,tanggal_transaksi,pengantaran,penjemputan,total,status,keterangan)
-    values ('$id_pelanggan','$id_petugas','$id_ongkir','$id_promo','$tgl_transaksi','$antar','$jemput','$total','pesan','$keterangan')");
+    $sql = mysqli_query($konek, "insert into tb_transaksi(id_pelanggan,id_ongkir,id_promo,tanggal_transaksi,pengantaran,penjemputan,total,status,keterangan)
+    values ('$id_pelanggan','$id_ongkir','$id_promo','$tgl_transaksi','$antar','$jemput','$total','pesan','$keterangan')");
 
     $id_transaksi_barusan = mysqli_insert_id($konek);
 
@@ -72,11 +72,14 @@ if ($aksi == 'simpan') {
 
 if ($aksi == 'bayar') {
     $id = $_GET['id'];
+    $sql = mysqli_query($konek, "select * from tb_transaksi where id_transaksi='$id'");
+    $d = mysqli_fetch_assoc($sql);
     $gambar = $_FILES['xgambar']['name'];
     $tmpgambar = $_FILES['xgambar']['tmp_name'];
+    $namagambar = str_replace(" ", "", $d['id_transaksi'] . date("YmdHis") . $gambar);
 
-    mysqli_query($konek, "UPDATE tb_transaksi SET bukti_bayar='$gambar',status='bayar' WHERE id_transaksi='$id'");
-    copy($tmpgambar, "admin/dist/bukti_bayar/$gambar");
+    mysqli_query($konek, "UPDATE tb_transaksi SET bukti_bayar='$namagambar',status='bayar' WHERE id_transaksi='$id'");
+    copy($tmpgambar, "admin/dist/bukti_bayar/$namagambar");
     echo "<script>alert('Anda telah melakukan pembayaran');location='pesanan.php'</script>";
 }
 

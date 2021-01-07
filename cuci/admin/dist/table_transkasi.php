@@ -6,18 +6,18 @@
                             <div class="card-body">
                                 <div class="table-responsive">
                                   <?php
-                                   $query = $konek->query("SELECT t.id_pelanggan,p.nama_pelanggan,t.status,t.total FROM tb_transaksi t INNER JOIN tb_pelanggan p ON t.id_pelanggan=p.id_pelanggan");
+                                   $query = $konek->query("SELECT t.id_transaksi,t.id_pelanggan,p.nama_pelanggan,t.status,t.total FROM tb_transaksi t INNER JOIN tb_pelanggan p ON t.id_pelanggan=p.id_pelanggan");
                                   ?>
                                   
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th hidden>ID Transaksi</th>
-                                                <th hidden>ID Pelanggan</th>
+                                                <th>ID Transaksi</th>
                                                 <th>Nama Pelanggan</th>
                                                 <th>Status</th>
                                                 <th>Total</th>
+                                                <th>Action</th>
                
                                             </tr>
                                         </thead>
@@ -33,13 +33,12 @@
                                             ?>
                                             <tr>
                                                 <td><?=$no++; ?></td>
-                                                <td hidden><?= $data['id_transaksi'];?></td>
-                                                <td hidden><?=$data['id_pelanggan'];?></td>
+                                                <td><?= $data['id_transaksi'];?></td>
                                                 <td><?= $data['nama_pelanggan'];?></td>
                                                 <td><?= $data['status']; ?></td>
                                                 <td>Rp. <?= $data['total']; ?></td>
                                                 <td>                                                
-                                                <a href="bukti_bayar.php?&id=<?= $data['id_pelanggan'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
+                                                <a href="edit_transaksi.php?id=<?php echo $data['id_transaksi'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
                                                 </td>
 
                                             </tr>

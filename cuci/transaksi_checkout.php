@@ -108,10 +108,12 @@ if (empty($_SESSION['nama'])) {
                 $do = mysqli_fetch_assoc($sqlo);
                 $total = $subtotal + $do['harga_ongkir'];
 
-                echo "Diskon  : " . $d['nama_promo'] . " " . $d['diskon'] . "%<br>";
-                echo "Ongkos Kirim : " . $do['harga_ongkir'];
+
+                
+                echo "Diskon            : " . $d['nama_promo'] . " " . $d['diskon'] . "%<br>";
+                echo "Ongkos Kirim      : " . $do['harga_ongkir'];
                 echo "<br>Total Pesanan : Rp $total";
-                echo "<br>Pesan : $psn";
+                echo "<br>Pesan         : $psn";
 
                 ?>
 
