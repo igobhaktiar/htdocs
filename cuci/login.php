@@ -1,3 +1,10 @@
+<?php
+include "koneksi/koneksi.php";
+session_start();
+if (!empty($_SESSION['nama'])) {
+    echo "<script>alert('Anda Sudah Login!');location='.'</script>";
+}
+?>
 <!DOCTYPE html>
 <html>
 
