@@ -70,8 +70,8 @@
    </header>
 
 <form action="" method="post">
-<input type="text" id="searchquery" size="60" name="keyword" placeholder="" />
-<input type="submit" id="searchbutton" value="Search" name="Search" class="formbutton" />
+<input type="text" id="searchquery" size="60" name="keyword" placeholder="Masukkan No Transaksi....." />
+<input type="submit" id="searchbutton" value="Cari" name="Search" class="btn btn-primary" />
 </form>
 <?php
 //koneksi
