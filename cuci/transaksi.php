@@ -35,21 +35,16 @@ if (empty($_SESSION['nama'])) {
         width: 500px;
         height: 400px;
         }
-</style>
-
+    </style>
 </head>
-
 <body>
-
     <?php include "./sidebar.php" ?>
-
     <div class="contactus">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <div class="title">
                         <h2>Transaksi</h2>
-
                     </div>
                 </div>
             </div>
@@ -62,10 +57,8 @@ if (empty($_SESSION['nama'])) {
             </div>
             <div class="col">
                 <form action="transaksi_aksi.php?xaksi=tambah" method="post">
-
                     <button type="button" id="btn-tambah-form" class="btn btn-danger btn-sm">Tambah Form</button>
                     <button type="button" id="btn-reset-form" class="btn btn-outline-secondary btn-sm">Reset Form</button><br><br>
-
                     <b>Barang ke 1 :</b>
                     <table class="table table-bordered">
                         <tbody>
@@ -100,9 +93,7 @@ if (empty($_SESSION['nama'])) {
                             </tr>
                         </tbody>
                     </table>
-
                     <div id="insert-form"></div>
-
                     <table class="table table-bordered">
                         <tbody>
                             <tr>
@@ -150,13 +141,10 @@ if (empty($_SESSION['nama'])) {
                     <hr>
                     <button type="submit" name="btn" class="btn btn-outline-success btn-sm">Cuci Sekarang</button>
                 </form>
-
                 <input type="hidden" id="jumlah-form" value="1">
-
             </div>
         </div>
     </div>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -165,7 +153,6 @@ if (empty($_SESSION['nama'])) {
             $("#btn-tambah-form").click(function() { // Ketika tombol Tambah Data Form di klik
                 var jumlah = parseInt($("#jumlah-form").val()); // Ambil jumlah data form pada textbox jumlah-form
                 var nextform = jumlah + 1; // Tambah 1 untuk jumlah form nya
-
                 // Kita akan menambahkan form dengan menggunakan append
                 // pada sebuah tag div yg kita beri id insert-form
                 $("#insert-form").append("<b>Barang ke " + nextform + " :</b>" +
