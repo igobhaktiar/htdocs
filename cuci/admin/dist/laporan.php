@@ -84,8 +84,8 @@ $s = $q->num_rows;
                         <div class="mt-3" style="max-height: 400px; overflow-y: auto;">
                         <table class="table table-bordered">
                           <tr>
-                          <th>#</th>
-                          <th>Nama</th>
+                          <th></th>
+                          <th>Status</th>
                           <th>Pengantaran</th>
                           <th>Penjemputan</th>
                           <th>Total</th>
