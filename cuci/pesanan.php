@@ -1,6 +1,9 @@
 <?php
 include "koneksi/koneksi.php";
 session_start();
+if (empty($_SESSION['nama'])) {
+    echo "<script>alert('Silahkan Login!');location='login.php'</script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -57,7 +57,7 @@ session_start();
                                 <div class="text-bg">
                                     <h1>FEAF <br> <strong class="black_bold">Shoes Care</strong><br></h1>
                                     <h2>Membersihkan seluruh bagian sepatu anda hingga tanpa noda !</h2>
-                                    <a href="transaksi/transaksi.php">Cuci Kuy ! <i class='fa fa-angle-right'></i></a>
+                                    <a href="transaksi.php">Cuci Kuy ! <i class='fa fa-angle-right'></i></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -250,26 +250,26 @@ session_start();
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 padddd">
-                            <form class="main_form">
-                                <div class="row">
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Name" type="text" name="Name">
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Email" type="text" name="Email">
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <button class="send">Send</button>
-                                    </div>
+                            <form action="contact_process.php" method="post" class="main_form">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Name" type="text" name="name">
                                 </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Email" type="text" name="email">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Phone" type="text" name="phone">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <textarea class="textarea" placeholder="Message" type="text" name="message"></textarea>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <button type="submit" name="send" class="send">Send</button>
+                                </div>
+                            </div>
                             </form>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
