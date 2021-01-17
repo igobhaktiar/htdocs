@@ -38,14 +38,13 @@
                                                 </div>
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.php">Forgot Password?</a>
-                                                <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Login</button>
+                                                <div class="col-md-4">
+                                                     <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Login</button>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="card-footer text-center">
-                                        <div class="small"><a href="register.php">Need an account? Sign up!</a></div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

@@ -14,7 +14,7 @@ if ($_SESSION['status'] != "Login") {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Data Wilayah Ongkir</title>
+        <title>Data Pelanggan</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
@@ -25,35 +25,32 @@ if ($_SESSION['status'] != "Login") {
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Data Wilayah</h1>
+                        <h1 class="mt-4">Data Pelanggan</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                            <li class="breadcrumb-item active">kota</li>
+                            <li class="breadcrumb-item active">Pelanggan</li>
                         </ol>
-                        <div class="col-md-2">  
-                            <div class="form-group mt-4 mb-0">
-                                <a class="btn btn-primary btn-block" href="tambah_kota.php">Tambah kota</a>
-                            </div>
-                        </div>
                         <!-- table -->
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table mr-1"></i>
-                                Tabel kota
+                                 Pelanggan
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                   <?php
-                                   $query = $konek->query("SELECT * FROM `tb_ongkir`");
+                                   $query = $konek->query("SELECT * FROM `tb_pelanggan`");
                                   ?>
                                   
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th hidden>ID Ongkir</th>
-                                                <th>Nama Kota</th>
-                                                <th>Harga Ongkir</th>
+                                                <th hidden>ID Pelanggan</th>
+                                                <th>Nama</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>Alamat</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
@@ -68,13 +65,11 @@ if ($_SESSION['status'] != "Login") {
                                             ?>
                                             <tr>
                                                 <td><?=$no++; ?></td>
-                                                <td hidden><?=$data['id_ongkir'];?></td>
-                                                <td><?= $data['alamat'];?></td>
-                                                <td><?= $data['harga_ongkir']; ?></td>
-                                                <td>
-                                                    <a href="edit_kota.php?&id=<?= $data['id_ongkir'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
-                                                    <a href="hapus_kota.php?&id=<?= $data['id_ongkir'] ?>" class="deletebtn border-0 btn-transition btn btn-outline-danger" type="button"> <i class="fa fa-trash"></i> </a> 
-                                                </td>   
+                                                <td hidden><?=$data['id_pelanggan'];?></td>
+                                                <td><?= $data['nama_pelanggan'];?></td>
+                                                <td><?= $data['email']; ?></td>
+                                                <td><?= $data['no_telepon']; ?></td>
+                                                <td><?= $data['alamat']; ?></td>
                                             </tr>
                                             <?php } ?>
                                         </tbody>
