@@ -41,7 +41,7 @@ if ($_SESSION['status'] != "Login") {
                     while ($data = mysqli_fetch_array($query_mysql)) {
                     ?>
                     <tr>
-                        <td><?="<img src='bukti_bayar/".$data['bukti_bayar']."style='width:200px; height:200px;'>"?></td>
+                        <td><?="<img src='bukti_bayar/".$data['bukti_bayar'].">"?></td>
                     </tr>
                     
                     <?php } ?>  

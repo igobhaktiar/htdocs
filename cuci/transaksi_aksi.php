@@ -72,14 +72,11 @@ if ($aksi == 'simpan') {
 
 if ($aksi == 'bayar') {
     $id = $_GET['id'];
-    $sql = mysqli_query($konek, "select * from tb_transaksi where id_transaksi='$id'");
-    $d = mysqli_fetch_assoc($sql);
     $gambar = $_FILES['xgambar']['name'];
     $tmpgambar = $_FILES['xgambar']['tmp_name'];
-    $namagambar = str_replace(" ", "", $d['id_transaksi'] . date("YmdHis") . $gambar);
 
-    mysqli_query($konek, "UPDATE tb_transaksi SET bukti_bayar='$namagambar',status='bayar' WHERE id_transaksi='$id'");
-    copy($tmpgambar, "admin/dist/bukti_bayar/$namagambar");
+    mysqli_query($konek, "UPDATE tb_transaksi SET bukti_bayar='$gambar',status='bayar' WHERE id_transaksi='$id'");
+    copy($tmpgambar, "admin/dist/bukti_bayar/$gambar");
     echo "<script>alert('Anda telah melakukan pembayaran');location='pesanan.php'</script>";
 }
 
