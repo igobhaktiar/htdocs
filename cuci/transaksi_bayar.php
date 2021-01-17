@@ -38,7 +38,7 @@ session_start();
                     </div>
                     <div class=" mt-5">
                         <form method="POST" action="transaksi_aksi.php?xaksi=bayar&id=<?php echo $_GET['id'] ?>" enctype="multipart/form-data">
-                            <input type="file" class="form-control" name="xgambar">
+                            <input type="file" class="form-control" name="xgambar" required="required">
                             <button class="btn btn-info" type="submit">Simpan</button>
                         </form>
                     </div>
