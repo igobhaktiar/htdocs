@@ -1,7 +1,5 @@
 <?php 
 session_start();
-$level = $_SESSION['level'];
-
 ?>
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.php">Admin Cuci Sepatu</a>

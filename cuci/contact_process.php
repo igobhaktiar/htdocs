@@ -9,6 +9,5 @@ if (isset($_POST['send'])) {
   
   $query = mysqli_query($konek,"insert into kontak values ('','$name','$email','$phone','$message')");
   echo "<script>alert('Pesan anda telah terkirim !');location='index.php'</script>";
-  }
-  
+  } 
 ?>

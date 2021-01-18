@@ -21,11 +21,28 @@
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                        <!-- syntax notif -->
+                                        <?php
+                                            if (isset($_GET['pesan'])) {
+                                                $pesan = $_GET['pesan'];
+                                                if($pesan == "gagal"){
+                                            ?>
+                                            
+                                            <div class="alert alert-danger">
+                                                <strong>Peringatan !</strong> Username atau password anda salah
+                                            </div>
+                                            
+                                            <?php
+                                                } 
+                                            }
+                                        ?>
+                                         <!--end of syntax notif -->
+
                                     <div class="card-body">
                                         <form action="login_akses.php" method="post">
                                             <div class="form-group">
-                                                <label class="small mb-1" for="inputEmailAddress">Username</label>
-                                                <input type="text" name="username" class="form-control py-4" id="inputEmailAddress"  placeholder="Enter Username..." />
+                                                <label class="small mb-1" >Username</label>
+                                                <input type="text" name="username" class="form-control py-4" id="inputUsername"  placeholder="Enter Username..." />
                                             </div>
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputPassword">Password</label>

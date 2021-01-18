@@ -85,7 +85,7 @@ session_start();
                                     <div class="row">
                                         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                             <div class="img_bg">
-                                                <h3>50% DISCOUNT<br> <strong class="black_nolmal">the latest collection</strong></h3>
+                                                <h3>PROMO GAISS !!!<br> <strong class="black_nolmal">2 Sepatu hanya 40 ribu...</strong></h3>
                                             </div>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
@@ -104,7 +104,7 @@ session_start();
                                     <div class="row">
                                         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                             <div class="img_bg">
-                                                <h3>50% DISCOUNT<br> <strong class="black_nolmal">the latest collection</strong></h3>
+                                                <h3>PROMO GAISS !!!<br> <strong class="black_nolmal">2 Sepatu hanya 40 ribu...</strong></h3>
                                             </div>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
@@ -123,7 +123,7 @@ session_start();
                                     <div class="row">
                                         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                             <div class="img_bg">
-                                                <h3>50% DISCOUNT<br> <strong class="black_nolmal">the latest collection</strong></h3>
+                                                <h3>PROMO GAISS !!!<br> <strong class="black_nolmal">2 Sepatu hanya 40 ribu...</strong></h3>
                                             </div>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
@@ -243,26 +243,25 @@ session_start();
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 padddd">
-                            <div class="map_section">
-                                <div id="map">
-                                </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="aboutimg">
+                                <figure><img src="images/kontak.jpg"/></figure>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 padddd">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <form action="contact_process.php" method="post" class="main_form">
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Name" type="text" name="name">
+                                    <input class="form-control" placeholder="Name" type="text" name="name" required>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Email" type="text" name="email">
+                                    <input class="form-control" placeholder="Email" type="text" name="email" required>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Phone" type="text" name="phone">
+                                    <input class="form-control" placeholder="Phone" type="text" name="phone" required>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="textarea" placeholder="Message" type="text" name="message"></textarea>
+                                    <textarea class="textarea" placeholder="Message" type="text" name="message" required></textarea>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <button type="submit" name="send" class="send">Send</button>

@@ -45,7 +45,7 @@
               <div class="form-group">
                   <center> <input type="submit" class="btn btn-block btn-primary" name="submit" value="Register"> </center>
               </div>
-              <p class="text-center">Have an already account?<a href="login.php">Login here</a></p>
+              <p class="text-center">Have an already account?<a href="login">Login here</a></p>
           </form>
         </div>
       </div>

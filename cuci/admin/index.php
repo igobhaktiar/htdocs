@@ -2,15 +2,15 @@
 <html>
 
 <head>
-    <meta http-equiv="refresh" content="0;url=dist/index.php">
-    <title>SB Admin</title>
+    <meta http-equiv="refresh" content="0;url=dist/index">
+    <title>Feaf Shoes Care</title>
     <script language="javascript">
-        window.location.href = "dist/index.php"
+        window.location.href = "dist/index"
     </script>
 </head>
 
 <body>
-    Go to <a href="dist/index.php">/dist/index.php</a>
+    Go to <a href="dist/index">/dist/index</a>
 </body>
 
 </html>

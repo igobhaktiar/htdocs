@@ -56,42 +56,36 @@
             </div>
           </div>
 </div>
-
-
-
-
-      <!-- map -->
    <div class="contact">
-         <div class="container-fluid padddd">
-           
+         <div class="container-fluid">
             <div class="row">
-               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 padddd">
-                <div class="map_section">
-                     <div id="map">
-                     </div>
-                   </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 padddd">
-                <form action="contact_process.php" method="post" class="main_form">
+               <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
+                   <form action="contact_process.php" name="kontak" method="post" class="main_form" required>
                    <div class="row">
                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                         <input class="form-control" placeholder="Name" type="text" name="name">
+                         <input class="form-control" placeholder="Name" type="text" name="name" required>
                       </div>
                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                         <input class="form-control" placeholder="Email" type="text" name="email">
+                         <input class="form-control" placeholder="Email" type="text" name="email" required>
                       </div>
                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                         <input class="form-control" placeholder="Phone" type="text" name="phone">
+                         <input class="form-control" placeholder="Phone" type="text" name="phone" required>
                       </div>
                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                         <textarea class="textarea" placeholder="Message" type="text" name="message"></textarea>
+                         <textarea class="textarea" placeholder="Message" type="text" name="message" required></textarea>
                       </div>
                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                          <button type="submit" name="send" class="send">Send</button>
                       </div>
                    </div>
                 </form>
-               </div> 
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                  <div class="aboutimg">
+                     <figure><img src="images/kontak.jpg"/></figure>
+                  </div>
+               </div>
+ 
             </div>
          </div>
       </div>
@@ -110,7 +104,8 @@
       <script src="js/popper.min.js"></script> 
       <script src="js/bootstrap.bundle.min.js"></script> 
       <script src="js/jquery-3.0.0.min.js"></script> 
-      <script src="js/plugin.js"></script> 
+      <script src="js/plugin.js"></script>
+ 
       <!-- sidebar --> 
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
       <script src="js/custom.js"></script>
@@ -157,27 +152,6 @@
       </script> 
 
 
-   <script>
-
-      // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-      // Australia.
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-          center: {lat: 40.645037, lng: -73.880224},
-          });
-
-        var image = 'images/maps-and-flags.png';
-        var beachMarker = new google.maps.Marker({
-          position: {lat: 40.645037, lng: -73.880224},
-          map: map,
-          icon: image
-        });
-      }
-    </script>
-   <!-- google map js -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-      <!-- end google map js -->
 
    </body>
 </html>

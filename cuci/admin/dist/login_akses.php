@@ -8,9 +8,11 @@ include 'koneksi.php';
 // menangkap data yang dikirim dari form login
 $username = $_POST['username'];
 $password = $_POST['password'];
+$level	= $_GET['level'];
 
 // menyeleksi data user dengan username dan password yang sesuai
 $login = mysqli_query($konek, "select * from tb_petugas where username='$username' and password='$password'");
+
 // menghitung jumlah data yang ditemukan
 $cek = mysqli_num_rows($login);
 
@@ -22,7 +24,10 @@ if ($cek > 0) {
 	$_SESSION['username'] = $data['username'];
 	$_SESSION['password'] = $data['password'];
 	$_SESSION['id_petugas'] = $data['id_petugas'];
+	$_SESSION['level'] = $data['level'];
+
 	header("location:index.php");
 } else {
-  header("location:login.php?pesan=gagal");
+	header("location:login.php?pesan=gagal");
 }
+?>

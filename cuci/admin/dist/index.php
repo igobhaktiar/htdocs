@@ -2,7 +2,7 @@
 session_start();
 if ($_SESSION['status'] != "Login") {
     # code...
-    header("location:login.php?pesan=belum_login");
+    echo "<script>alert('Silahkan Login!');location='login'</script>";
   }
   include "koneksi.php"
 ?>

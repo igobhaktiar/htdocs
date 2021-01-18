@@ -10,16 +10,16 @@ session_start();
     </div>
 
     <ul class="list-unstyled components">
-        <li class="active"> <a href="index.php">Home</a></li>
-        <li> <a href="about.php">About</a></li>
-        <li> <a href="product.php">Treatment</a></li>
-        <li> <a href="pesanan.php">Pesanan</a></li>
-        <li> <a href="cekstatus.php">Cek Status</a></li>
-        <li> <a href="contact.php">Contact us</a></li>
+        <li class="active"> <a href="index">Home</a></li>
+        <li> <a href="about">About</a></li>
+        <li> <a href="product">Treatment</a></li>
+        <li> <a href="pesanan">Pesanan</a></li>
+        <li> <a href="cekstatus">Cek Status</a></li>
+        <li> <a href="contact">Contact us</a></li>
         <?php if (empty($_SESSION['nama'])) { ?>
-            <li> <a href="login.php">Login</a></li>
+            <li> <a href="login">Login</a></li>
         <?php } else if (!empty($_SESSION['nama'])) { ?>
-            <li> <a href="logout.php">Log Out</a></li>
+            <li> <a href="logout">Log Out</a></li>
         <?php } ?>
     </ul>
 
@@ -39,7 +39,7 @@ session_start();
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index.php">
+                                    <a href="index">
                                         <font color="black">Feaf.id</font>
                                         <!-- <img src="images/logo.jpg" alt="#"> -->
                                     </a>
@@ -54,13 +54,13 @@ session_start();
                                     <a href="#" style="color: black;">Selamat datang, <b><?php echo $_SESSION['nama'] ?></b></a>
                                 </li>
                                 <li>
-                                    <a href="login.php"><img style="margin-right: 15px;" src="icon/1.png" alt="#" /></a>
-                                </li>
-                                <li class="tytyu">
-                                    <a href="#"><img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
+                                    <a href="login"><img style="margin-right: 15px;" src="icon/1.png" alt="#" /></a>
                                 </li>
                                 <li>
-                                    <a href="transaksi.php"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
+                                    <a href="cekstatus"><img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
+                                </li>
+                                <li>
+                                    <a href="transaksi"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
                                 </li>
 
                                 <li>

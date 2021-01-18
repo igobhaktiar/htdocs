@@ -2,7 +2,7 @@
 include "koneksi/koneksi.php";
 session_start();
 if (empty($_SESSION['nama'])) {
-    echo "<script>alert('Silahkan Login!');location='login.php'</script>";
+    echo "<script>alert('Silahkan Login!');location='login'</script>";
 }
 ?>
 <!DOCTYPE html>
@@ -66,10 +66,10 @@ if (empty($_SESSION['nama'])) {
                             <td><?= $da['status'] ?></td>
                             <td>Rp <?= number_format($da['total']) ?></td>
                             <td width="200px"> <?php if ($da['status'] == 'pesan') { ?>
-                                    <a href="transaksi_bayar.php?id=<?= $da['id_transaksi']; ?>" class="btn btn-outline-primary btn-sm">Bayar</a>
+                                    <a href="transaksi_bayar?id=<?= $da['id_transaksi']; ?>" class="btn btn-outline-primary btn-sm">Bayar</a>
                                 <?php } else if ($da['status'] == 'bayar') { ?>
                                     <b>Anda Sudah Bayar</b>
-                                    <a href="dt.php?id=<?= $da['id_transaksi']; ?>" class="btn btn-outline-success btn-sm">Rincian Pesanan</a>
+                                    <a href="dt?id=<?= $da['id_transaksi']; ?>" class="btn btn-outline-success btn-sm">Rincian Pesanan</a>
                                 <?php } ?>
                             </td>
                         </tr>

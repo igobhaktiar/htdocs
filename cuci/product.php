@@ -64,7 +64,7 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="icon/1day.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail1.php">Detail</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="product_detail1">Detail</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
@@ -82,7 +82,7 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="icon/speedometer.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail2.php">Detail</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="product_detail2">Detail</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
@@ -100,7 +100,7 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="icon/running.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail3.php">Detail</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="product_detail3">Detail</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
@@ -118,7 +118,7 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="icon/shoe.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail4.php">Detail</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="product_detail4">Detail</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
@@ -136,7 +136,7 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="icon/cap.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail5.php">Detail</a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="product_detail5">Detail</a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
@@ -154,7 +154,7 @@
         <div class="full product">
           <div class="product_img">
             <div class="center"> <img src="icon/bag.png" alt="#"/>
-              <div class="overlay_hover"> <a class="add-bt" href="product_detail6.php">Detail </a> </div>
+              <div class="overlay_hover"> <a class="add-bt" href="product_detail6">Detail </a> </div>
             </div>
           </div>
           <div class="product_detail text_align_center">
