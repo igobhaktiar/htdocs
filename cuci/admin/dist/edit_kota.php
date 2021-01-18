@@ -26,10 +26,11 @@ if ($_SESSION['status'] != "Login") {
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Edit Promo</h1>
+                        <h1 class="mt-4">Edit Wilayah</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Edit Promo</li>
+                            <li class="breadcrumb-item"><a href="index">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="kota">Data Wilayah</a></li>
+                            <li class="breadcrumb-item active">Edit Wilayah</li>
                         </ol>
                     </div>
                     

@@ -2,7 +2,7 @@
 session_start();
 ?>
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.php">Admin Cuci Sepatu</a>
+            <a class="navbar-brand" href="index">Admin Cuci Sepatu</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -21,7 +21,7 @@ session_start();
                         <a class="dropdown-item" href="#">Settings</a>
                         <a class="dropdown-item" href="#">Activity Log</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="logout.php">Logout</a>
+                        <a class="dropdown-item" href="logout">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -32,15 +32,15 @@ session_start();
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.php">
+                            <a class="nav-link" href="index">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <a class="nav-link" href="kota.php">
+                            <a class="nav-link" href="kota">
                                 <div class="sb-nav-link-icon"><i class="fas fa-city"></i></div>
                                 Kota
                             </a>
-                            <a class="nav-link" href="pelanggan.php">
+                            <a class="nav-link" href="pelanggan">
                                 <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                                 Data Pelanggan
                             </a>
@@ -53,8 +53,8 @@ session_start();
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="transaksi.php">Transaksi</a>
-                                    <a class="nav-link" href="promo.php">Promo</a>
+                                    <a class="nav-link" href="transaksi">Transaksi</a>
+                                    <a class="nav-link" href="promo">Promo</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -70,7 +70,7 @@ session_start();
                                     </a>
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="register.php">Registrasi Pegawai</a>
+                                            <a class="nav-link" href="register">Registrasi Pegawai</a>
                                         </nav>
                                     </div>
                                 </nav>

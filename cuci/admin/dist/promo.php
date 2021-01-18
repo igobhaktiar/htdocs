@@ -14,7 +14,7 @@ if ($_SESSION['status'] != "Login") {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tables - SB Admin</title>
+        <title>Promo</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
@@ -27,12 +27,12 @@ if ($_SESSION['status'] != "Login") {
                     <div class="container-fluid">
                         <h1 class="mt-4">Promo</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="index">Dashboard</a></li>
                             <li class="breadcrumb-item active">Promo</li>
                         </ol>
                         <div class="col-md-2">  
                             <div class="form-group mt-4 mb-0">
-                                <a class="btn btn-primary btn-block" href="tambah_promo.php">Tambah Promo</a>
+                                <a class="btn btn-primary btn-block" href="tambah_promo">Tambah Promo</a>
                             </div>
                         </div>
                         <!-- table -->
@@ -73,8 +73,8 @@ if ($_SESSION['status'] != "Login") {
                                                 <td><?= $data['nama_promo'];?></td>
                                                 <td><?= $data['diskon']; ?></td>
                                                 <td>
-                                                    <a href="edit_promo.php?&id=<?= $data['id_promo'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
-                                                    <a href="hapus_promo.php?&id=<?= $data['id_promo'] ?>" class="deletebtn border-0 btn-transition btn btn-outline-danger" type="button"> <i class="fa fa-trash"></i> </a> 
+                                                    <a href="edit_promo?&id=<?= $data['id_promo'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
+                                                    <a href="hapus_promo?&id=<?= $data['id_promo'] ?>" class="deletebtn border-0 btn-transition btn btn-outline-danger" type="button"> <i class="fa fa-trash"></i> </a> 
                                                 </td>   
                                             </tr>
                                             <?php } ?>

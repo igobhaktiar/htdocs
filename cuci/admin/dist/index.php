@@ -35,7 +35,7 @@ if ($_SESSION['status'] != "Login") {
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">Transaksi</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="transaksi.php">View Details</a>
+                                        <a class="small text-white stretched-link" href="transaksi">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -44,7 +44,7 @@ if ($_SESSION['status'] != "Login") {
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">Promo</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="promo.php">View Details</a>
+                                        <a class="small text-white stretched-link" href="promo">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@ if ($_SESSION['status'] != "Login") {
                                 <div class="card bg-success text-white mb-4">
                                     <div class="card-body">Laporan</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="laporan.php">View Details</a>
+                                        <a class="small text-white stretched-link" href="laporan">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@ if ($_SESSION['status'] != "Login") {
                                 <div class="card bg-danger text-white mb-4">
                                     <div class="card-body">Kritik dan Saran</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="kritik_saran.php">View Details</a>
+                                        <a class="small text-white stretched-link" href="kritik_saran">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>

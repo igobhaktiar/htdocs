@@ -27,12 +27,12 @@ if ($_SESSION['status'] != "Login") {
                     <div class="container-fluid">
                         <h1 class="mt-4">Data Wilayah</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="index">Dashboard</a></li>
                             <li class="breadcrumb-item active">kota</li>
                         </ol>
                         <div class="col-md-2">  
                             <div class="form-group mt-4 mb-0">
-                                <a class="btn btn-primary btn-block" href="tambah_kota.php">Tambah kota</a>
+                                <a class="btn btn-primary btn-block" href="tambah_kota">Tambah kota</a>
                             </div>
                         </div>
                         <!-- table -->
@@ -54,6 +54,7 @@ if ($_SESSION['status'] != "Login") {
                                                 <th hidden>ID Ongkir</th>
                                                 <th>Nama Kota</th>
                                                 <th>Harga Ongkir</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
@@ -72,8 +73,8 @@ if ($_SESSION['status'] != "Login") {
                                                 <td><?= $data['alamat'];?></td>
                                                 <td><?= $data['harga_ongkir']; ?></td>
                                                 <td>
-                                                    <a href="edit_kota.php?&id=<?= $data['id_ongkir'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
-                                                    <a href="hapus_kota.php?&id=<?= $data['id_ongkir'] ?>" class="deletebtn border-0 btn-transition btn btn-outline-danger" type="button"> <i class="fa fa-trash"></i> </a> 
+                                                    <a href="edit_kota?&id=<?= $data['id_ongkir'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
+                                                    <a href="hapus_kota?&id=<?= $data['id_ongkir'] ?>" class="deletebtn border-0 btn-transition btn btn-outline-danger" type="button"> <i class="fa fa-trash"></i> </a> 
                                                 </td>   
                                             </tr>
                                             <?php } ?>

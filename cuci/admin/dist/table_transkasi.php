@@ -37,7 +37,7 @@
                       <td><?= $data['status']; ?></td>
                       <td>Rp. <?= $data['total']; ?></td>
                       <td>                                                
-                      <a href="edit_transaksi.php?id=<?php echo $data['id_transaksi'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
+                      <a href="edit_transaksi?id=<?php echo $data['id_transaksi'] ?>" class="editbtn border-0 btn-transition btn btn-outline-warning" type="button"> <i class="fa fa-edit"></i> </a> 
                       </td>
 
                   </tr>
